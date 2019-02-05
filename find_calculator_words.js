@@ -19,16 +19,20 @@ fs.readFile( __dirname + '/words.txt', function (err, data) {
 	//}
 	//console.log(unusableLetters);
 	var unusableLettersRegEx = /[cdfjkmnpqrtuvwxy]/;
-
+	var longestWord = '';
 	for (var word of words) {
 		word = word.toLowerCase();
 		if (word.match(unusableLettersRegEx)) {
 			//console.log(word + ' is not a match');
 		}
 		else {
-			console.log(word + ' IS a match');
+			if (longestWord.length < word.length) {
+				longestWord = word;
+			}
+			//console.log(word + ' IS a match');
 		}
 	}
+	console.log("The longest possible English word to make on a calculator is " + longestWord);
 });
 
 
