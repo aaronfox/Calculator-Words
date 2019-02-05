@@ -1,15 +1,51 @@
 /* Container holding the image and the text */
-.container {
+/*.container {
 	position: relative;
-}
+}*/
 
 /* Bottom right text */
-.text-block {
+/*.text-block {
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
 	background-color: black;
 	color: white;
 	padding-left: 20px;
-	padding-right: 20px;
+	padding-right: 20px;s
+}*/
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 640px;
+	line-height: 0;
+}
+
+.container img {
+	max-width: 100%;
+}
+
+.overlay1 {
+	width: 100%;
+	position: absolute;
+	top: 20.125%;
+	left: 13.75%;
+	color: black;
+	background-color: purple;
+}
+
+.overlay2 {
+	width: 20%;
+	position: absolute;
+	top: 41.666%;
+	left: 36.09%;
+}
+
+div.figure img,
+div.figure div.caption {
+	/*width: 100%;*/
+}
+
+div.figure div {
+	overflow: hidden;
+	white-space: nowrap;
 }

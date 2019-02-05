@@ -1,14 +1,35 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>title</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></head>
 	<link rel="stylesheet" href=".\calculator.css" />
-<body>
-	<div class="container center-block">
-		<img src=".\calculator.jpg" class="img-responsive center-block" style="width:100%;">
-		<div class="text-block"><p>07734</p></div>
-	</div>
-</body>
+	<body>
+		<div class="container figure">
+			<!--<img src=".\calculator.jpg" class="img-responsive center-block">
+	<div class="text-block"><p>07734</p></div>-->
+			<img src=".\calculator.jpg" class="main" />
+			<!--<img src="http://lorempixel.com/64/64/" class="overlay1" />-->
+			<!--<h1 class="overlay1">07734</h1>-->
+			<div class="caption">07734</div>
+			<!--<img src="http://lorempixel.com/128/128/" class="overlay2" />s-->
+		</div>
+		<div id='my-element' style='width:100px;height:50px;'>
+			<span>The quick brown fox jumps over the lazy dog</span>
+		</div>
+		<div class="figure" style="width:150px;">
+			<img src="calculator.jpg" alt="logo" />
+			<div class="caption">A description for the imadfge</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="jquery.textfill.min.js"></script>
+		<script>
+			$(function () {
+				$('#my-element').textfill({
+					maxFontPixels: 36
+				});
+			});
+		</script>
+	</body>
 </html>
