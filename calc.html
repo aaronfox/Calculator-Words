@@ -10,12 +10,24 @@
 <body>
 	<div id="grandparent">
 		<div id="parent">
-			<div id="what" class="sandia">07734</div>
+			<div id="what" class="sandia calc-font" id="calc-text">07734</div>
 		</div>
+		<div class="text-rotate calc-font" id="rotated-text">07734</div>
+		<br />
+		<button type="button" id="longest-button" >Longest Possible Calculator English Word?</button>
+		<button type="button" id="valid-word-button">Is your word Valid?</button>
 	</div>
-	<div class="text-rotate calc-font">07734</div>
-	<div>hi</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="find_calculator_words.js"></script>
+	<script>
+		// Personal JQUERY button stuff here
+		$("#longest-button").click(function () {
+			$("#calc-text").text("heliogabalize");
+		});
+		$("#valid-word-button").click(function () {
+			$("#
+		});
+	</script>
 	<script>
 	function sendMessage(msg) {
 			//   var Message += " " +msg;

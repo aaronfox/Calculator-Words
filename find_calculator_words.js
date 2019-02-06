@@ -27,12 +27,29 @@ fs.readFile( __dirname + '/words.txt', function (err, data) {
 		}
 		else {
 			if (longestWord.length < word.length) {
-				longestWord = word;
+				longestWord = word.trim();
 			}
 			//console.log(word + ' IS a match');
 		}
 	}
 	console.log("The longest possible English word to make on a calculator is " + longestWord);
+	// oizehasglb
+	// Find Number equivalent that yield word:
+	var letterToNumberMap = new Map([['o', 0], ['i', 1], ['z', 2], ['e', 3], ['h', 4], ['a', 4], ['s', 5], ['g', 6], ['l', 7], ['b', 9], [' ', ' ']]);
+	for (const letter of longestWord) {
+		console.log(letter);
+		console.log('number == ' + letterToNumberMap.get(letter));
+	}
+	var test = translateToNumbers("hello i");
+	console.log("test == " + test);
+	function translateToNumbers(word) {
+		var numberWord = '';
+		for (var index = word.length - 1; index > -1; index--) {
+			console.log('number == ' + letterToNumberMap.get(word[index]));
+			numberWord += letterToNumberMap.get(word[index]);
+		}
+		return numberWord;
+	}
 });
 
 
