@@ -32,6 +32,9 @@
 	height: 18%;
 	//font-size: 45px;
 	background-color: #DBE4E5;
+}
+
+.calc-font {
 	font-family: 'dseg7_modernbold';
 }
 
@@ -41,4 +44,12 @@
 
 #spanItalic {
 	font-style: italic;
+}
+
+.text-rotate {
+	-moz-transform: scale(-1, -1);
+	-webkit-transform: scale(-1, -1);
+	-o-transform: scale(-1, -1);
+	-ms-transform: scale(-1, -1);
+	transform: scale(-1, -1);
 }
