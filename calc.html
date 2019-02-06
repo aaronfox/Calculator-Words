@@ -23,7 +23,12 @@
 			var dNow = new Date();
 			console.info(dNow.getHours() + ":" + dNow.getMinutes() + ":" + dNow.getSeconds() + " : " + msg);
 		}
+		window.onload = function () {
+			$('#what').textFit({ alignVert: false });
+		};
 		$(document).ready(function () {
+			$(window).on('load', function () { sendMessage("    width: " + $("#what").width() + " height: " + $("#what").height()); $('#what').textFit({ alignVert: false }); });
+
 			$(window).resize(function () { sendMessage("    width: " + $("#what").width() + " height: " + $("#what").height()); $('#what').textFit({ alignVert: false }); });
 		});
 		// jQuery.textFit v1.0
